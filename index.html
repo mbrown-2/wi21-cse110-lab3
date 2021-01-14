@@ -139,7 +139,7 @@
             
         <h3><span style="color:blue">A survey? What for?</a></h3>
         <p>Feel free to input any <b>gibberish</b> you deem necessary down below. <i>Don't worry, I won't save the data 'cause I can't afford a server.</i></p>
-        <form action="/action_page.php">
+        <form action="/action_page.php" method="get">
             <fieldset>
                 <legend>Survey</legend>
                 <label for="fname">First name:</label>
@@ -168,7 +168,7 @@
                     <option value="Uhh, I'm a back-end type of guy.">
                 </datalist>
                 <label for="thoughts">Leave any thoughts here!<\label>
-                <textarea id="thoughts" name="thoughts" rows="3" cols="50">Type here</textarea>
+                <textarea id="thoughts" name="thoughts" rows="1" cols="50">Type here</textarea>
             <input type="submit" value="Submit">
         </fieldset>    
         </form>
