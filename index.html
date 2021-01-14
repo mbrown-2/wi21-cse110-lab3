@@ -138,28 +138,29 @@
         <hr>
             
         <h3><span style="color:blue">A survey? What for?</a></h3>
-        <p>Feel free to input any <b>gibberish</b> you see necessary down below. <i>Don't worry, I won't save the data 'cause I can't afford a server.</i></p>
+        <p>Feel free to input any <b>gibberish</b> you deem necessary down below. <i>Don't worry, I won't save the data 'cause I can't afford a server.</i></p>
         <form action="/action_page.php">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="dateEntry">Date visiting this page:</label>
-            <input type="date" id="dateEntry" name="dateEntry" value="2021-01-01" min="1900-01-01" max="2100-12-31"><br><br>
-            <label for="food">Choose a snack cause why not?</label>
-            <select name="food" id="food">
-                <optgroup label="Select one:">
-                    <option value="Hamburger">Hamburger</option>
-                    <option value="Hamborger">Hamborger</option>
-                    <option value="Ham-burger-cheese-burger">Ham-burger-cheese-burger</option>
-                    <option value="Burger w/ Cheese">Burger w/Cheese</option>
-                    <option value="Bunless Burger">Bunless Burger</option>
-                    <option value="Only-Bun Burger">Only-Bun Burger</option>
-                </optgroup>
-            </select><br><br>
+            <fieldset>
+                <legend>Survey</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="dateEntry">Date visiting this page:</label>
+                <input type="date" id="dateEntry" name="dateEntry" value="2021-01-01" min="1900-01-01" max="2100-12-31"><br><br>
+                <label for="food">Choose a food cause why not?</label>
+                <select name="food" id="food">
+                    <optgroup label="Select one:">
+                        <option value="Hamburger">Hamburger</option>
+                        <option value="Hamborger">Hamborger</option>
+                        <option value="Ham-burger-cheese-burger">Ham-burger-cheese-burger</option>
+                        <option value="Burger w/ Cheese">Burger w/Cheese</option>
+                        <option value="Bunless Burger">Bunless Burger</option>
+                        <option value="Only-Bun Burger">Only-Bun Burger</option>
+                    </optgroup>
+                </select><br><br>
             <input type="submit" value="Submit">
-            
-            
+        </fieldset>    
         </form>
         </main>
     </body>
