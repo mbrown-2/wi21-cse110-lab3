@@ -115,6 +115,21 @@
             </video>
             <p><b>Warning! Clip may not be playable on certain websites.</b></p>
             
+            <p><b>Another warning.... the button below spawns bears so be careful.</b></p>
+            <button onclick="showContent()">Spawn bear.</button>
+            <template>
+                <h2>Bear!</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/2010-kodiak-bear-1.jpg" width="200" height="200">
+            </template>
+            
+            <script>
+                function showContent() {
+                    var temp = document.getElemntsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                }
+            </script>
+            
             <hr>
             
             <button type="button" onclick="alert('Surprise tongue twister: The Big Blue Bug bit the Big Black Bear and the Big Black Bear bled blue black blood.')">Before proceeding, click me</button>
@@ -200,7 +215,7 @@
                     <option value="How about CSS and JS?">
                     <option value="Uhh, I'm a back-end type of guy.">
                 </datalist><br><br>
-                <label for="thoughts">Leave any thoughts here!<\label>
+                <label for="thoughts">Leave any thoughts here!</label>
                 <textarea id="thoughts" name="thoughts" rows="1" cols="50">Type here</textarea>
                 <input type="submit" value="Submit">
             </fieldset>    
