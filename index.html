@@ -119,12 +119,12 @@
             <button onclick="showContent()">Spawn bear.</button>
             <template>
                 <h2>Bear!</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/2010-kodiak-bear-1.jpg" width="200" height="200">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/2010-kodiak-bear-1.jpg" width="2400" height="1600">
             </template>
             
             <script>
                 function showContent() {
-                    var temp = document.getElemntsByTagName("template")[0];
+                    var temp = document.getElementsByTagName("template")[0];
                     var clon = temp.content.cloneNode(true);
                     document.body.appendChild(clon);
                 }
