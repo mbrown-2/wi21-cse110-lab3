@@ -190,6 +190,7 @@
         <form action="/action_page.php" method="get">
             <fieldset>
                 <legend>Survey</legend>
+                <input id="hide" name="hide" type="hidden" value="Can't see me!!!">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname"><br><br>
                 <label for="lname">Last name:</label>
@@ -202,7 +203,7 @@
                 <label for="favcolor">Pick your favorite color:</label>
                 <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
                 <label for="lang">Based on my top 3 programming languages, which one of the 3 do you prefer the most?</label>
-                <input type="number" id="lang" name="lang" min="1" max="3">
+                <input type="number" id="lang" name="lang" min="1" max="3"><br><br>
                 <label for="dateEntry">Date visiting this page:</label>
                 <input type="date" id="dateEntry" name="dateEntry" value="2021-01-01" min="1900-01-01" max="2100-12-31"><br><br>
                 <label for="food">Choose a food cause why not?</label>
@@ -224,6 +225,8 @@
                     <option value="How about CSS and JS?">
                     <option value="Uhh, I'm a back-end type of guy.">
                 </datalist><br><br>
+                <input type="checkbox" id="closure" name="closure" value="Yes">
+                <label for="closure">Did you enjoy this questionnaire?</label><br><br>
                 <label for="thoughts">Leave any thoughts here!</label>
                 <textarea id="thoughts" name="thoughts" rows="1" cols="50">Type here</textarea>
                 <input type="submit" value="Submit">
