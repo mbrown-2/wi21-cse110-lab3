@@ -1,0 +1,74 @@
+/* --- Selectors --- */
+
+/* Class Selector */
+.selfInfo {
+    background-color: gray;
+}
+
+/* ID Selector */
+#introductory {
+    background-color: yellow;
+}
+
+/* Universal Selector */
+* {
+    background-color: floralwhite;
+}
+
+/* Element Selector */
+h3 {
+    text-align: center;
+}
+
+/* Attribute Selector */
+a[target] {
+    background-color: yellow;
+}
+
+/* Pseudo-class Selector */
+a:link {
+    color: darkgreen;
+}
+a:visited {
+    color: limegreen;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: purple;
+}
+
+/* Selector List */
+h1, h2, h3, h4, h5, h6 { font-family: Arial; }
+
+/* Descendant Combinator */
+li {
+    list-style-type: disc;
+}
+li li {
+    list-style-type: circle;
+}
+
+/* Child Combinator */
+div > p {
+    background-color: lightskyblue;
+}
+
+/* General Sibling Combinator */
+h3 ~ div {
+    color: red;
+}
+
+/* Adjacent Sibling Combinator */
+li:first-of-type + li {
+    color:darkslategray;
+}
+
+/* Combining Two Selectors */
+div.selfInfo {
+    font-weight: bold;
+}
+
+
+/* --- CSS Topics --- */
