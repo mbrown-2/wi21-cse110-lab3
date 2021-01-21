@@ -12,11 +12,11 @@ Date: '...'
 Attendees: '...'
 Today's note-taker: '...'
 
-**Agenda**
-1. Completed objectives
-2. New objectives
-3. Team organization
-4. Prevailing issues
+**Group Agenda**
+1. Completed objectives - What is complete?
+2. New objectives - What is next?
+3. Team organization - Updates on individuals.
+4. Prevailing issues - Which problems persist?
 
 **Completed objectives**
 '...'
@@ -26,6 +26,13 @@ Today's note-taker: '...'
 
 **Team Organization**
 '...'
+```
+Name:
+- What have you done yesterday?
+- What have you done today?
+- Any issues?
+- How comfortable are you with our goals so far?
+```
 
 **Prevailing Issues**
 '...'
