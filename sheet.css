@@ -1,0 +1,169 @@
+/* --- Selectors --- */
+
+/* Class Selector */
+.selfInfo {
+    background-color: gray;
+}
+
+/* ID Selector */
+#introductory {
+    background-color: yellow;
+}
+
+#summary {
+    background-color: #888;
+}
+
+/* Universal Selector */
+* {
+    background-color: floralwhite;
+}
+
+/* Element Selector */
+h3 {
+    text-align: center;
+    border: 1px black;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:150px;
+    margin-left:150px;
+}
+
+/* Attribute Selector */
+a[target] {
+    background-color: yellow;
+}
+
+/* Pseudo-class Selector */
+a:link {
+    color: darkgreen;
+}
+a:visited {
+    color: limegreen;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: purple;
+}
+
+/* Selector List */
+h1, h2, h3, h4, h5, h6 { 
+    font-family: Arial;
+    background-color:rgba(255,0,255,0.2);
+}
+
+/* Descendant Combinator */
+li {
+    list-style-type: disc;
+}
+li li {
+    list-style-type: circle;
+}
+
+/* Child Combinator */
+div > p {
+    background-color: #97ecf7;
+}
+
+/* General Sibling Combinator */
+h3 ~ div {
+    color: rgb(255, 56, 56);
+}
+
+/* Adjacent Sibling Combinator */
+li:first-of-type + li {
+    color: hsl(297, 4, 16);
+}
+
+/* Combining Two Selectors */
+div.selfInfo {
+    font-weight: bold;
+}
+
+
+/* --- CSS Topics --- */
+
+
+/* Comments.... well, that's self explanatory, ain't it? */
+
+#saturate {
+    background-color: hsla(290, 100%, 50%, 0.3);
+    /*width:900px;*/
+    border:10px solid blueviolet;
+    padding:50px;
+    margin:20px;
+}
+
+#topTitle {
+    border-style:groove;
+    border-color:skyblue;
+    border-width:3px;
+    border-radius:5px;
+    margin: auto;
+}
+
+#favCourses {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#favLanguages {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+img ~ figcaption {
+    color: green;
+    text-decoration: underline;
+    text-align: left;
+    font-family: 'Lato';
+    font-size: 24px;
+}
+    
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: Black;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+
+/* Grid */
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: Black;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
