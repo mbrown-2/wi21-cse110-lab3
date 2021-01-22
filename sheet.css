@@ -123,7 +123,7 @@ img ~ figcaption {
     color: green;
     text-decoration: underline;
     text-align: left;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 24px;
 }
     
