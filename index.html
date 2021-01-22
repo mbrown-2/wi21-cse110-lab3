@@ -2,7 +2,7 @@
 
 <html>
     <head>
-	<link rel="stylesheet" href="sheet.css" type="text/css">
+        <link rel="stylesheet" href="sheet.css" type="text/css">
         <title>mbrown-2 Webpage!</title>
         <meta name="keywords" content="HTML, Assignment, Lab 2, CSE 110, UCSD">
         <meta name="author" content="Michael Brown">
@@ -15,7 +15,7 @@
         </style>
     </head>
     <header>
-        <h1><b>Hello</b>, <i>Homepage!</i></h1>
+        <h1 id="topTitle"><b>Hello</b>, <i>Homepage!</i></h1>
         <h2>If you've found your way here, then you must really enjoy reading through bare-bone webpages.</h2>
         <h3>My appologies, I'm a newbie at this language.</h3>
         <p id="introductory">Before going any further, I recommmend checking my out my <a href="https://mbrown-2.github.io/">original Github page</a> for a cleaner and more beautiful experience.</p>
@@ -66,7 +66,7 @@
                 </div>
                 <aside>
                     <details>
-                        <summary><b><em>Disclaimer!</em></b></summary>
+                        <summary id="summary"><b><em>Disclaimer!</em></b></summary>
                         <p>Please take note: <strong>Learning these languages takes time for me!</strong> They're easier to grasp than they are to master.</p>
                         <svg>
                             <g transform='translate(0,50)'>
@@ -113,7 +113,7 @@
             <hr>
             
             <h2><span style="color:blue">A Goofy Little Tangent</span></h2>
-            <pre>
+            <pre id="saturate">
             One of my favorite movies of 2020 was Tenet. 
             Thanks to the perks of working at a movie theatre, 
             I was able to privately watch the film with a few co-workers behind closed doors.
@@ -165,7 +165,13 @@
                 <source media="(min-width:465px)" srcset="img_white_flower.jpg">
                 <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
             </picture>
-            <p>This HTML portion uses code credited to this source: <a href="https://www.w3schools.com/tags/tag_picture.asp">w3schools</a>. <b><i>Bless this website and all of its godly assistence!</i></b></p>
+
+            <style>
+                #outSource {
+                    margin: 10px 10px 10px 10px;
+                }
+            </style>
+            <p id="outSource">This HTML portion uses code credited to this source: <a href="https://www.w3schools.com/tags/tag_picture.asp">w3schools</a>. <b><i>Bless this website and all of its godly assistence!</i></b></p>
             
             <hr>
             

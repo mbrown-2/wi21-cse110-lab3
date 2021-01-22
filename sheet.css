@@ -10,6 +10,10 @@
     background-color: yellow;
 }
 
+#summary {
+    background-color: #888;
+}
+
 /* Universal Selector */
 * {
     background-color: floralwhite;
@@ -18,6 +22,11 @@
 /* Element Selector */
 h3 {
     text-align: center;
+    border: 1px black;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:150px;
+    margin-left:150px;
 }
 
 /* Attribute Selector */
@@ -40,7 +49,10 @@ a:active {
 }
 
 /* Selector List */
-h1, h2, h3, h4, h5, h6 { font-family: Arial; }
+h1, h2, h3, h4, h5, h6 { 
+    font-family: Arial;
+    background-color:rgba(255,0,255,0.2);
+}
 
 /* Descendant Combinator */
 li {
@@ -52,17 +64,17 @@ li li {
 
 /* Child Combinator */
 div > p {
-    background-color: lightskyblue;
+    background-color: #97ecf7;
 }
 
 /* General Sibling Combinator */
 h3 ~ div {
-    color: red;
+    color: rgb(255, 56, 56);
 }
 
 /* Adjacent Sibling Combinator */
 li:first-of-type + li {
-    color:darkslategray;
+    color: hsl(297, 4, 16);
 }
 
 /* Combining Two Selectors */
@@ -72,3 +84,22 @@ div.selfInfo {
 
 
 /* --- CSS Topics --- */
+
+
+/* Comments.... well, that's self explanatory, ain't it? */
+
+#saturate {
+    background-color: hsla(290, 100%, 50%, 0.3);
+    width:450px;
+    border:10px solid blueviolet;
+    padding:50px;
+    margin:20px;
+}
+
+#topTitle {
+    border-style:groove;
+    border-color:skyblue;
+    border-width:3px;
+    border-radius:5px;
+    margin: auto;
+}
